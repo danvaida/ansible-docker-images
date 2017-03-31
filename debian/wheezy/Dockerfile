@@ -3,8 +3,9 @@ FROM debian:wheezy
 LABEL maintainer me@danvaida.com
 
 RUN echo "deb http://ftp.debian.org/debian wheezy-backports main" >> /etc/apt/sources.list
-RUN apt-get -y update
-RUN apt-get -y install ca-certificates \
+RUN apt-get update
+RUN apt-get -y install apt-transport-https=0.9.7.9+deb7u7 \
+                       ca-certificates \
                        python-dev=2.7.3-4+deb7u1 \
                        python-ndg-httpsclient=0.3.2-1~bpo70+1 \
                        python-openssl=0.13-2+deb7u1 \
