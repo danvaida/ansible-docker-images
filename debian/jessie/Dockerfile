@@ -16,10 +16,5 @@ RUN DEBIAN_FRONTEND=noninteractive \
     && pip install ansible==2.2 \
     && apt-get remove -f -y --purge --auto-remove \
            gcc \
-           python-cffi \
-           python-pip \
-           python-dev \
-           libffi-dev \
-           libssl-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*  /tmp/*

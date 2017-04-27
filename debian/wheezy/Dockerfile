@@ -14,6 +14,4 @@ RUN echo "deb http://ftp.debian.org/debian wheezy-backports main" >> /etc/apt/so
                           python-urllib3=1.3-3 \
                           libffi-dev=3.0.10-3 \
     && pip install ansible==2.2 \
-    && apt-get remove -y --purge python-dev \
-                                 python-pip \
     && apt-get autoremove -y

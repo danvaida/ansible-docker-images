@@ -26,6 +26,4 @@ RUN yum update -y \
     && pip install --upgrade setuptools pip \
     && pip install ansible==2.2 \
     && yum clean -y all \
-    && yum remove -y gcc \
-                     python2-pip \
-                     python-devel
+    && yum remove -y gcc

@@ -18,6 +18,4 @@ RUN yum update -y \
     && pip install ansible==2.2 \
     && rm epel-release-latest-7.noarch.rpm \
     && yum clean -y all \
-    && yum remove -y gcc \
-                     python2-pip \
-                     python-devel
+    && yum remove -y gcc
