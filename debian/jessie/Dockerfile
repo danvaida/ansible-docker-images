@@ -5,7 +5,8 @@ LABEL maintainer me@danvaida.com
 RUN DEBIAN_FRONTEND=noninteractive \
     apt-get update -y \
     && apt-get install --fix-missing \
-    && apt-get install -y gcc='4:4.9.2-2' \
+    && apt-get install -y apt-transport-https=1.0.9.8.4 \
+           gcc='4:4.9.2-2' \
            libffi-dev='3.1-2+b2' \
            libssl-dev='1.0.1t-1+deb8u6' \
            python=2.7.9-1 \
