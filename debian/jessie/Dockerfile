@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     && apt-get install -y \
         apt-transport-https=1.0.9.8.4 \
         gcc='4:4.9.2-2' \
-        libffi-dev='3.1-2+b2' \
+        libffi-dev='3.1-2+deb8u1' \
         libssl-dev='1.0.1t-1+deb8u6' \
         python=2.7.9-1 \
         python-dev=2.7.9-1 \
