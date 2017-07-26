@@ -5,7 +5,7 @@ LABEL maintainer me@danvaida.com
 RUN DEBIAN_FRONTEND=noninteractive \
     apt-get update -y \
     && apt-get install --no-install-recommends -y \
-        apt-transport-https=1.4.6 \
+        apt-transport-https=1.4.7 \
         ca-certificates \
         gnupg=2.1.18-6 \
         libssl-dev=1.1.0f-3 \
