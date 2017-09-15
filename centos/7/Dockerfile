@@ -18,11 +18,11 @@ RUN yum update -y \
     && yum install -y epel-release \
     && yum install -y \
         ca-certificates \
-        gcc-4.8.5-11.el7 \
-        openssl-1.0.1e-60.el7_3.1 \
-        openssl-devel-1.0.1e-60.el7_3.1 \
+        gcc-4.8.5-16.el7 \
+        openssl-1.0.2k-8.el7 \
+        openssl-devel-1.0.2k-8.el7 \
         python2-pip-8.1.2-5.el7 \
-        python-devel-2.7.5-48.el7 \
+        python-devel-2.7.5-58.el7 \
         libffi-devel-3.0.13-18.el7 \
     && pip install --upgrade setuptools pip \
     && pip install ansible==2.2 \
