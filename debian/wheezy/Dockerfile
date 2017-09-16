@@ -16,7 +16,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
         python-pyasn1=0.1.3-1 \
         python-urllib3=1.3-3 \
         libffi-dev=3.0.10-3+deb7u2 \
-    && pip install ansible==2.2 \
+    && pip install ansible==2.3 \
     && apt-get remove -f -y --purge --auto-remove build-essential \
     && apt-get clean \
     && apt-get autoremove -y \
