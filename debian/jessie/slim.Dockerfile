@@ -14,7 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
         python-dev=2.7.9-1 \
         python-pip=1.5.6-5 \
         python-yaml=3.11-2 \
-    && pip install --upgrade cffi pip \
+    && pip install --upgrade cffi pip setuptools \
     && pip install ansible==2.3 \
     && apt-get remove -f -y --purge --auto-remove gcc \
     && apt-get clean \
