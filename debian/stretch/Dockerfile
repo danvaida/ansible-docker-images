@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
         apt-transport-https=1.4.8 \
         ca-certificates \
         gnupg=2.1.18-8~deb9u1 \
-        libssl-dev=1.1.0f-3 \
+        libssl-dev=1.1.0f-3+deb9u1 \
         python-dev=2.7.13-2 \
         python-setuptools=33.1.1-1 \
         python-wheel=0.29.0-2 \
