@@ -15,7 +15,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
         python-pip=9.0.1-2 \
         build-essential=12.3 \
     && pip install --upgrade pip cffi \
-    && pip install ansible==2.3 \
+    && pip install ansible==2.4.2 \
     && apt-get remove -f -y --purge --auto-remove build-essential \
     && apt-get clean \
     && apt-get autoremove -y \
