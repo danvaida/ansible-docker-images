@@ -11,6 +11,6 @@ RUN yum update -y \
         python27-devel-2.7.12-2.121.amzn1.x86_64 \
         python27-pip-9.0.1-1.24.amzn1 \
     && pip install --upgrade pip setuptools \
-    && pip install ansible==2.3 \
+    && pip install ansible==2.4.2 \
     && yum clean -y all \
     && yum remove -y gcc

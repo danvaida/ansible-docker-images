@@ -25,6 +25,6 @@ RUN yum update -y \
         python-devel-2.7.5-58.el7 \
         libffi-devel-3.0.13-18.el7 \
     && pip install --upgrade setuptools pip \
-    && pip install ansible==2.3 \
+    && pip install ansible==2.4.2 \
     && yum clean -y all \
     && yum remove -y gcc

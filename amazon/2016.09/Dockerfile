@@ -10,6 +10,6 @@ RUN yum update -y \
         python27-devel-2.7.12-2.121.amzn1 \
         python27-pip-9.0.1-1.24.amzn1 \
     && pip install --upgrade pip setuptools \
-    && pip install paramiko==2.1.2 ansible==2.3 \
+    && pip install paramiko==2.4.0 ansible==2.4.2 \
     && yum clean -y all \
     && yum remove -y gcc

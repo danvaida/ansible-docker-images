@@ -19,7 +19,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     && wget https://bootstrap.pypa.io/get-pip.py \
     && python get-pip.py \
     && rm get-pip.py \
-    && pip install ansible==2.3 \
+    && pip install ansible==2.4.2 \
     && apt-get remove -f -y --purge --auto-remove build-essential \
     && apt-get clean \
     && apt-get autoremove -y \
